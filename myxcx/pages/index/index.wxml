@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<view class="wrap">
+    <swiper class="swiper"  indicator-dots="{{true}}"
+        autoplay="{{true}}" interval="{{2000}}" duration="{{300}}" circular="{{true}}">
+        <block wx:for="{{banners}}" wx:key="{{index}}">
+            <swiper-item>
+                <view class="swiper-item">
+                    <image mode="scaleToFill" src="{{item.pic}}"></image>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+     
+    <view class="mask"></view>
+
+    <view class="iconbox">
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+    </view>
+
+    <view class="iconbox2">
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+        <view class="ge">
+            <view class="pic">
+                <image src="/images/qg.png"></image>
+            </view>
+            <view class="word">栏目</view>
+        </view>
+    </view>
+
+    
+</view>

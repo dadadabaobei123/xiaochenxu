@@ -1,0 +1,6 @@
+.shu{
+    font-size:60px;
+}
+.btnbox{
+    display: flex;
+}

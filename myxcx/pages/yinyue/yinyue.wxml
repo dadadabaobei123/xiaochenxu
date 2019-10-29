@@ -1,0 +1,18 @@
+<!--pages/yinyue/yinyue.wxml-->
+<view class="wrap">
+    <scroll-view scroll-y="true" style="height: {{wh}}px;" bindscrolltolower="lowerHan">
+        <view class="ge" wx:for="{{arr}}" wx:key="{{item.id}}" bindtap="tz" data-id="{{item.id}}">
+            <view class="tu">
+                <image src="http://aiqianduan.com:7897/images/carimages_small/{{item.id}}/view/{{item.img}}"></image>
+            </view>
+            <view class="wen">
+                <view>
+                    {{item.brand}}{{item.series}}
+                </view>
+                <view>
+                    {{item.price}}{{item.engine}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

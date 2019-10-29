@@ -1,0 +1,21 @@
+<!--pages/lvyou/lvyou.wxml-->
+<view class="wrap">
+<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+<button type="primary" bindtap="takePhoto">拍照</button>
+<view>预览</view>
+<image mode="widthFix" src="{{src}}"></image>
+
+
+    <view class="shu">
+        {{a}}
+    </view>
+    <view class="btnbox">
+        <button bindtap="add" data-n="1">按我加1</button>
+        <button bindtap="add" data-n="2">按我加2</button>
+        <button bindtap="add" data-n="3">按我加3</button>
+        <button bindtap="minus">按我减1</button>
+    </view>
+    <view>
+        <slider min="0" max="100" value="{{a}}" bindchanging="changeHandler"></slider>
+    </view>
+</view>
